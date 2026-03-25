@@ -5,16 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO -->
-<meta name="description" content="Best beauty parlour in Mirzapur offering bridal makeup, hair, facials, nails and more. Book now at Pink Paradise Beauty Salon.">
+<meta name="description" content="Best beauty parlour in Mirzapur offering bridal makeup, hair styling, facials, nails and skin treatment. Book now at Pink Paradise Beauty Salon.">
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
     font-family: 'Poppins', sans-serif;
     margin:0;
-    background:#fff;
 }
 
 /* HEADER */
@@ -24,7 +22,7 @@ header {
     text-align:center;
     padding:40px 20px;
 }
-header h1 {margin:0; font-size:32px;}
+header h1 {margin:0;}
 
 /* SECTION */
 .section {padding:40px 20px; text-align:center;}
@@ -42,15 +40,10 @@ header h1 {margin:0; font-size:32px;}
     overflow:hidden;
     transition:0.3s;
 }
-.card:hover {
-    transform:translateY(-10px);
-}
-.card img {
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
+.card:hover {transform:translateY(-10px);}
+.card img {width:100%; height:180px; object-fit:cover;}
 .card h3 {color:#ff4d88;}
+.card p {padding:10px;}
 
 /* GALLERY */
 .gallery {
@@ -58,16 +51,10 @@ header h1 {margin:0; font-size:32px;}
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap:10px;
 }
-.gallery img {
-    width:100%;
-    border-radius:10px;
-}
+.gallery img {width:100%; border-radius:10px;}
 
 /* FORM */
-form {
-    max-width:400px;
-    margin:auto;
-}
+form {max-width:400px; margin:auto;}
 input, select, textarea {
     width:100%;
     padding:10px;
@@ -75,13 +62,21 @@ input, select, textarea {
     border-radius:5px;
     border:1px solid #ccc;
 }
+
+/* BUTTON */
 .btn {
     background:#ff4d88;
     color:white;
-    padding:10px;
+    padding:12px 18px;
     border:none;
-    cursor:pointer;
-    border-radius:5px;
+    border-radius:25px;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+.btn:hover {
+    background:#e6005c;
+    transform:scale(1.05);
 }
 
 /* FOOTER */
@@ -98,16 +93,18 @@ footer {
 
 <header>
 <h1>Pink Paradise Beauty Salon</h1>
-<p>Best Beauty Parlour in Mirzapur</p>
+<p>Best Parlour in Mirzapur</p>
+<br>
+<a class="btn" href="https://wa.me/919532800800">Book Now</a>
 </header>
 
 <!-- ABOUT -->
 <div class="section">
 <h2>About Us</h2>
 <p>
-Pink Paradise Beauty Salon is one of the best salons in Mirzapur located at Station Road, Pili Kothi. 
-We provide professional beauty services with expert staff and hygiene. 
-We also offer <b>professional makeup courses</b>.
+Pink Paradise Beauty Salon is one of the <b>best parlours in Mirzapur</b> located at Station Road, Pili Kothi. 
+We provide services like <b>bridal makeup, hair styling, facials, nails and skin treatment in Mirzapur</b>. 
+We also offer professional makeup courses.
 </p>
 </div>
 
@@ -208,7 +205,8 @@ We also offer <b>professional makeup courses</b>.
 </form>
 </div>
 
-    <div class="section">
+<!-- REVIEWS -->
+<div class="section">
 <h2>Customer Reviews</h2>
 
 <div class="card">
@@ -237,26 +235,33 @@ Give Review ⭐
 <!-- CONTACT -->
 <div class="section">
 <h2>Contact Us</h2>
-<p>📍 Station Road, Pili Kothi, Mirzapur</p>
-<p>📞 +91-9532800800</p>
+<p>📍 Station Road, Pili Kothi(Opposite St. Mary’s School Colony), Mirzapur</p>
+<p>📞 <a href="tel:+919532800800">+91-9532800800</a></p>
+
 <a class="btn" href="https://wa.me/919532800800">Chat on WhatsApp</a>
 </div>
+
+<!-- MAP -->
+<div class="section">
+<iframe 
+src="https://www.google.com/maps?q=Pink+Paradise+Beauty+Salon+Mirzapur&output=embed"
+width="100%" height="300" style="border:0;">
+</iframe>
+</div>
+
+<!-- INSTAGRAM -->
 <div class="section">
 <h2>Follow Us on Instagram</h2>
-
-<iframe 
-src="https://www.instagram.com/pink_paradise27/embed" 
-width="100%" 
-height="400" 
-frameborder="0">
-</iframe>
-
+<a class="btn" href="https://instagram.com/pink_paradise27" target="_blank">
+View Instagram 📸
+</a>
 </div>
+
 <footer>
 <p>© Pink Paradise Beauty Salon | Best Parlour in Mirzapur</p>
 </footer>
 
-    <script>
+<script>
 function sendToWhatsApp(e){
     e.preventDefault();
 
@@ -274,17 +279,8 @@ function sendToWhatsApp(e){
     + "Message: " + message;
 
     window.open(url, '_blank');
-
-    // EMAIL OPTION
-    let mail = "mailto:pinkparadise@gmail.com?subject=Salon Booking&body="
-    + "Name: " + name + "%0a"
-    + "Phone: " + phone + "%0a"
-    + "Service: " + service + "%0a"
-    + "Date: " + date + "%0a"
-    + "Message: " + message;
-
-    window.location.href = mail;
 }
 </script>
+
 </body>
 </html>
