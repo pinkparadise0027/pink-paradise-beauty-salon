@@ -34,16 +34,22 @@ header h1 {margin:0;}
     gap:20px;
 }
 .card {
-    background:#fff;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    overflow:hidden;
-    transition:0.3s;
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(10px);
 }
 .card:hover {transform:translateY(-10px);}
 .card img {width:100%; height:180px; object-fit:cover;}
 .card h3 {color:#ff4d88;}
 .card p {padding:10px;}
+
+.card {
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+from {opacity:0; transform:translateY(20px);}
+to {opacity:1;}
+}
 
 /* GALLERY */
 .gallery {
@@ -97,7 +103,11 @@ footer {
 <br>
 <a class="btn" href="https://wa.me/919532800800">Book Now</a>
 </header>
-
+    
+<div style="background:url('YOUR-REAL-IMAGE.jpg') center/cover; height:300px; color:white; display:flex; align-items:center; justify-content:center;">
+<h2>Luxury Beauty Experience in Mirzapur</h2>
+</div>
+    
 <!-- ABOUT -->
 <div class="section">
 <h2>About Us</h2>
